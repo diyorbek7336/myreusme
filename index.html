@@ -6,7 +6,7 @@
 <title>Esanbekov Diyorbek | System Network Administrator</title>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet"/>
 <style>
-:root{--bg:#f6f7f9;--paper:#fff;--ink:#16202e;--dim:#5b6676;--line:#dfe3ea;--accent:#1f5fbf;--accent-soft:#e8f0fc;--track:#e7ebf1;color-scheme:light}
+:root{--bg:#f6f7f9;--paper:#fff;--ink:#16202e;--dim:#5b6676;--line:#dfe3ea;--accent:#1a4f9c;--accent-soft:#e6eefa;--track:#e7ebf1;color-scheme:light}
 @media (prefers-color-scheme:dark){:root{--bg:#0e131b;--paper:#151c27;--ink:#e8ecf3;--dim:#9aa5b6;--line:#26303f;--accent:#6aa3f5;--accent-soft:#1a2a44;--track:#242e3d;color-scheme:dark}}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
@@ -22,12 +22,12 @@ aside{position:sticky;top:48px}
 .contact{margin-top:28px;padding-top:22px;border-top:1px solid var(--line);display:grid;gap:12px;font-size:.98rem}
 .contact dt{color:var(--dim);font-size:.85rem}
 .contact dd{overflow-wrap:anywhere}
-.status{margin-top:24px;display:inline-flex;align-items:center;gap:8px;font-size:.92rem;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:6px 12px;border-radius:999px}
+.status{margin-top:24px;display:inline-flex;align-items:center;gap:8px;font-size:.92rem;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:6px 12px;border-radius:4px}
 .status::before{content:'';width:8px;height:8px;border-radius:50%;background:#2fa66a}
 nav{margin-top:28px;display:flex;gap:18px;flex-wrap:wrap;font-weight:600;font-size:.95rem}
 main{display:grid;gap:20px}
-section{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:32px 36px}
-h2{font:700 1.35rem/1.2 'Source Serif 4',Georgia,serif;margin-bottom:22px}
+section{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:32px 36px;border-top:3px solid var(--accent);box-shadow:0 1px 2px rgba(18,40,76,.05)}
+h2{font:700 1.35rem/1.2 'Source Serif 4',Georgia,serif;margin-bottom:22px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 .about p{max-width:68ch;margin-bottom:12px}
 .about p:last-child{margin-bottom:0}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
@@ -38,11 +38,11 @@ h2{font:700 1.35rem/1.2 'Source Serif 4',Georgia,serif;margin-bottom:22px}
 .grp h3{font-size:1rem;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
 .bars{list-style:none;display:grid;gap:10px}
 .bars li{display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-size:.96rem}
-.bars i{grid-column:1/-1;grid-row:2;height:4px;border-radius:2px;background:var(--track);position:relative;overflow:hidden}
+.bars i{grid-column:1/-1;grid-row:2;height:5px;border-radius:3px;background:var(--track);position:relative;overflow:hidden}
 .bars i::after{content:'';position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--accent);border-radius:2px}
-.bars b{color:var(--dim);font-weight:500;font-size:.88rem}
+.bars b{color:var(--ink);font-weight:600;font-size:.88rem;font-variant-numeric:tabular-nums}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
-.tags span{font-size:.85rem;padding:2px 10px;border:1px solid var(--line);border-radius:999px;color:var(--dim)}
+.tags span{font-size:.85rem;padding:2px 10px;border:1px solid var(--line);border-radius:4px;background:var(--accent-soft);color:var(--accent);font-weight:500}
 .job-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 16px}
 .job h3{font-size:1.1rem}
 .job .org{color:var(--accent);font-weight:600}
@@ -60,7 +60,7 @@ footer{grid-column:1/-1;text-align:center;color:var(--dim);font-size:.9rem;paddi
   <h1 class="name">Esanbekov Diyorbek</h1>
   <p class="role">System Network Administrator</p>
   <p class="summary">Active Directory, GPO, Linux, Docker va tarmoq infratuzilmasi bo‘yicha 8 oylik amaliy tajribaga ega mutaxassis. Xodimlarga texnik IT qo‘llab-quvvatlashni ta’minlaydi.</p>
-  <span class="status">Ishga tayyor</span>
+  <span class="status">Ish takliflarini ko‘rib chiqaman</span>
   <dl class="contact">
     <div><dt>Email</dt><dd><a href="mailto:diyorbekesenbekov1@gmail.com">diyorbekesenbekov1@gmail.com</a></dd></div>
     <div><dt>Telefon</dt><dd><a href="tel:+998958097775">+998 95 809 77 75</a></dd></div>
@@ -82,13 +82,13 @@ footer{grid-column:1/-1;text-align:center;color:var(--dim);font-size:.9rem;paddi
   <section id="skills">
     <h2>Ko‘nikmalar</h2>
     <div class="skills-grid">
-<div class="grp"><h3>Active Directory & GPO</h3><ul class="bars"><li><span>Active Directory (AD DS)</span><i style="--w:85%" aria-hidden="true"></i><b>85%</b></li><li><span>Group Policy (GPO)</span><i style="--w:55%" aria-hidden="true"></i><b>55%</b></li><li><span>Windows Server 2019/2022</span><i style="--w:82%" aria-hidden="true"></i><b>82%</b></li><li><span>DNS / DHCP</span><i style="--w:80%" aria-hidden="true"></i><b>80%</b></li></ul></div>
-<div class="grp"><h3>Tarmoq</h3><ul class="bars"><li><span>TCP/IP, VLAN, Routing</span><i style="--w:82%" aria-hidden="true"></i><b>82%</b></li><li><span>Cisco Packet Tracer</span><i style="--w:80%" aria-hidden="true"></i><b>80%</b></li><li><span>Firewall va xavfsizlik</span><i style="--w:78%" aria-hidden="true"></i><b>78%</b></li><li><span>VPN (OpenVPN)</span><i style="--w:78%" aria-hidden="true"></i><b>78%</b></li><li><span>Wireshark, monitoring</span><i style="--w:75%" aria-hidden="true"></i><b>75%</b></li></ul></div>
-<div class="grp"><h3>Linux</h3><ul class="bars"><li><span>Ubuntu Server</span><i style="--w:82%" aria-hidden="true"></i><b>82%</b></li><li><span>Bash va terminal</span><i style="--w:80%" aria-hidden="true"></i><b>80%</b></li><li><span>Nginx, SSH, Systemd</span><i style="--w:78%" aria-hidden="true"></i><b>78%</b></li><li><span>UFW / iptables</span><i style="--w:56%" aria-hidden="true"></i><b>56%</b></li></ul></div>
-<div class="grp"><h3>Docker</h3><ul class="bars"><li><span>Docker</span><i style="--w:80%" aria-hidden="true"></i><b>80%</b></li><li><span>Docker Compose</span><i style="--w:78%" aria-hidden="true"></i><b>78%</b></li><li><span>Docker Network va Volume</span><i style="--w:75%" aria-hidden="true"></i><b>75%</b></li><li><span>Dockerfile va image</span><i style="--w:75%" aria-hidden="true"></i><b>75%</b></li></ul></div>
-<div class="grp"><h3>Virtualizatsiya va Backup</h3><ul class="bars"><li><span>Hyper-V</span><i style="--w:80%" aria-hidden="true"></i><b>80%</b></li><li><span>VMware</span><i style="--w:78%" aria-hidden="true"></i><b>78%</b></li><li><span>Backup & Recovery</span><i style="--w:82%" aria-hidden="true"></i><b>82%</b></li><li><span>Virtual mashina boshqaruvi</span><i style="--w:78%" aria-hidden="true"></i><b>78%</b></li></ul></div>
-<div class="grp"><h3>Texnik IT yordam</h3><ul class="bars"><li><span>Xodimlarga IT support</span><i style="--w:90%" aria-hidden="true"></i><b>90%</b></li><li><span>Windows, Office, printer</span><i style="--w:88%" aria-hidden="true"></i><b>88%</b></li><li><span>Masofaviy yordam</span><i style="--w:85%" aria-hidden="true"></i><b>85%</b></li><li><span>IP kamera, DVR / NVR</span><i style="--w:78%" aria-hidden="true"></i><b>78%</b></li></ul></div>
-<div class="grp"><h3>Qo‘shimcha: dasturlash</h3><ul class="bars"><li><span>Python</span><i style="--w:75%" aria-hidden="true"></i><b>75%</b></li><li><span>JavaScript</span><i style="--w:72%" aria-hidden="true"></i><b>72%</b></li><li><span>Node.js</span><i style="--w:70%" aria-hidden="true"></i><b>70%</b></li></ul><p class="tags"><span>FastAPI</span><span>React</span><span>Next.js</span><span>REST API</span></p></div>
+<div class="grp"><h3>Active Directory & GPO</h3><ul class="bars"><li><span>Active Directory (AD DS)</span><i style="--w:65%" aria-hidden="true"></i><b>65%</b></li><li><span>Group Policy (GPO)</span><i style="--w:55%" aria-hidden="true"></i><b>55%</b></li><li><span>Windows Server 2019/2022</span><i style="--w:85%" aria-hidden="true"></i><b>85%</b></li><li><span>DNS / DHCP</span><i style="--w:65%" aria-hidden="true"></i><b>65%</b></li></ul></div>
+<div class="grp"><h3>Tarmoq</h3><ul class="bars"><li><span>TCP/IP, VLAN, Routing</span><i style="--w:68%" aria-hidden="true"></i><b>68%</b></li><li><span>Cisco Packet Tracer</span><i style="--w:70%" aria-hidden="true"></i><b>70%</b></li><li><span>Firewall va xavfsizlik</span><i style="--w:75%" aria-hidden="true"></i><b>75%</b></li><li><span>VPN (OpenVPN)</span><i style="--w:70%" aria-hidden="true"></i><b>70%</b></li></ul></div>
+<div class="grp"><h3>Linux</h3><ul class="bars"><li><span>Ubuntu Server</span><i style="--w:68%" aria-hidden="true"></i><b>68%</b></li><li><span>Bash va terminal</span><i style="--w:65%" aria-hidden="true"></i><b>65%</b></li><li><span>Nginx, SSH, Systemd</span><i style="--w:60%" aria-hidden="true"></i><b>60%</b></li><li><span>UFW / iptables</span><i style="--w:56%" aria-hidden="true"></i><b>56%</b></li></ul></div>
+<div class="grp"><h3>Docker</h3><ul class="bars"><li><span>Docker</span><i style="--w:65%" aria-hidden="true"></i><b>65%</b></li><li><span>Docker Compose</span><i style="--w:62%" aria-hidden="true"></i><b>62%</b></li><li><span>Docker Network va Volume</span><i style="--w:58%" aria-hidden="true"></i><b>58%</b></li><li><span>Dockerfile va image</span><i style="--w:60%" aria-hidden="true"></i><b>60%</b></li></ul></div>
+<div class="grp"><h3>Virtualizatsiya va Backup</h3><ul class="bars"><li><span>Hyper-V</span><i style="--w:80%" aria-hidden="true"></i><b>80%</b></li><li><span>VMware</span><i style="--w:60%" aria-hidden="true"></i><b>60%</b></li><li><span>Backup & Recovery</span><i style="--w:65%" aria-hidden="true"></i><b>65%</b></li><li><span>Virtual mashina boshqaruvi</span><i style="--w:62%" aria-hidden="true"></i><b>62%</b></li></ul></div>
+<div class="grp"><h3>Texnik IT yordam</h3><ul class="bars"><li><span>Xodimlarga IT support</span><i style="--w:80%" aria-hidden="true"></i><b>80%</b></li><li><span>Windows, Office, printer</span><i style="--w:80%" aria-hidden="true"></i><b>80%</b></li><li><span>Masofaviy yordam</span><i style="--w:75%" aria-hidden="true"></i><b>75%</b></li><li><span>IP kamera, DVR / NVR</span><i style="--w:60%" aria-hidden="true"></i><b>60%</b></li></ul></div>
+<div class="grp"><h3>Qo‘shimcha: dasturlash</h3><ul class="bars"><li><span>Python</span><i style="--w:60%" aria-hidden="true"></i><b>60%</b></li><li><span>JavaScript</span><i style="--w:58%" aria-hidden="true"></i><b>58%</b></li><li><span>Node.js</span><i style="--w:55%" aria-hidden="true"></i><b>55%</b></li></ul><p class="tags"><span>FastAPI</span><span>React</span><span>Next.js</span><span>REST API</span></p></div>
     </div>
   </section>
   <section id="experience" class="job">
@@ -105,7 +105,7 @@ footer{grid-column:1/-1;text-align:center;color:var(--dim);font-size:.9rem;paddi
       <li>Tarmoq infratuzilmasini sozlash va qo‘llab-quvvatlash: VLAN, firewall, VPN, DNS/DHCP, monitoring</li>
       <li>Xodimlarga texnik IT qo‘llab-quvvatlash ko‘rsatish (hardware, software, tarmoq muammolarini bartaraf etish)</li>
     </ul>
-    <p class="tags"><span>Active Directory</span><span>GPO</span><span>Windows Server</span><span>Ubuntu</span><span>Docker</span><span>Hyper-V</span><span>VMware</span><span>Cisco Packet Tracer</span><span>OpenVPN</span><span>Wireshark</span></p>
+    <p class="tags"><span>Active Directory</span><span>GPO</span><span>Windows Server</span><span>Ubuntu</span><span>Docker</span><span>Hyper-V</span><span>VMware</span><span>Cisco Packet Tracer</span><span>OpenVPN</span></p>
   </section>
 </main>
 <footer>© 2026 Esanbekov Diyorbek</footer>
